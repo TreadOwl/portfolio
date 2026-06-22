@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# `/\` &nbsp; ayush gusain
 
-First, run the development server:
+...
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+A personal portfolio — cream, beige, and monospace — for a
+*"Full Stack" Web-App Developer* from Dehradun, Uttarakhand
+who likes front-end, UI/UX, and making cool looking things.
+
+</div>
+
+---
+
+## ⌁ the feel
+
+Everything sits on a hand-mixed **OKLCH** palette — base cream, soft beige,
+warm sand — rendered in `JetBrains Mono` with `Noto Sans` for the quieter labels.
+A collapsible sidebar, a floating header, and per-page absolute backgrounds
+that drift behind a `z-3` content layer. Hover, and things lift two pixels.
+
+---
+
+## ⌁ built with
+
+| | |
+|---|---|
+| **[Next.js 16](https://nextjs.org)** | App Router, server components by default |
+| **[React 19](https://react.dev)** | the canvas |
+| **[TypeScript](https://www.typescriptlang.org)** | typed end to end |
+| **[Tailwind CSS v4](https://tailwindcss.com)** | config lives entirely in `globals.css` — no `tailwind.config` |
+| **[shadcn/ui](https://ui.shadcn.com)** | `radix-lyra` style, vendored primitives |
+| **[Radix UI](https://www.radix-ui.com)** | accessible component foundations |
+| **[Phosphor Icons](https://phosphoricons.com)** | the iconography |
+| **[Bun](https://bun.sh)** | package manager & runtime |
+
+---
+
+## ⌁ the architecture
+
+A single `(home)` route group owns the chrome — `TooltipProvider` → `SidebarProvider`
+→ sidebar, floating header, and a shared `<main>`. Three pages live beneath it:
+
+```
+src/
+├─ app/
+│  ├─ layout.tsx          → html shell, fonts, global css
+│  └─ (home)/
+│     ├─ layout.tsx       → providers + sidebar + header
+│     ├─ page.tsx         → home
+│     ├─ projects/        → work, pulled from lib/projects.json
+│     └─ contact/         → reach out
+├─ components/
+│  ├─ ui/                 → shadcn primitives (vendored)
+│  ├─ app-sidebar.tsx     → navigation + socials
+│  ├─ floating-header.tsx
+│  └─ bg-absolute.tsx     → HomeBg · ProjectsBg · ContactBg
+├─ lib/                   → cn() helper, projects data
+└─ hooks/                 → use-mobile, …
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⌁ run it
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun install
+bun dev          # dev server
+bun run build    # production build
+bun start        # serve the build
 
-## Learn More
+bun run lint       # eslint (next core-web-vitals + ts)
+bun run typecheck  # tsc --noEmit
+bun run format     # prettier — no semicolons, single quotes
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⌁ reach out
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[LinkedIn](https://www.linkedin.com/in/ayushgusain2106) ·
+[GitHub](https://github.com/TreadOwl) ·
+[E-mail](mailto:ayushgusain2106@gmail.com)
 
-## Deploy on Vercel
+<div align="center">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+*made this when tasks were easy, and I was trying to look busy*
+©2026 Ayush Gusain
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</div>
