@@ -82,6 +82,8 @@ bun format     # prettier — no semicolons, single quotes
 [GitHub](https://github.com/TreadOwl) ·
 [E-mail](mailto:ayushgusain2106@gmail.com)
 
+---
+
 <div align="center">
 
 *made this when tasks were easy, and I was trying to look busy*
