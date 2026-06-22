@@ -1,0 +1,36 @@
+{
+  "Projects": [
+    {
+      "name": "Ourkanban",
+      "url": "https://ourkanban.vercel.app",
+      "github": "https://github.com/TreadOwl/ourkanban",
+      "type": "me",
+      "description": "Lightweight, high-performance, real-time shareable Kanban board built for instant collaboration. Generate a board, save the code and get instant access anytime.",
+      "tech": "Built on Next.js using React, TypeScript, and Tailwind CSS. Uses Supabase as the database."
+    },
+    {
+      "name": "Pixel-doku",
+      "url": "https://pdoku.vercel.app",
+      "github": "https://github.com/TreadOwl/pdoku",
+      "type": "me",
+      "description": "Artistic, interactive, browser-based Sudoku game which uses colors instead of numbers. Four difficulty levels, with added artificial assymetry for highest difficulty.",
+      "tech": "Built on Next.js using React, TypeScript and Tailwind CSS."
+    },
+    {
+      "name": "PositiveMindCare",
+      "url": "https://www.positivemindcare.com",
+      "github": "",
+      "type": "work",
+      "description": "My work included several dynamic and interactive core components for the website CMS, admin/user portal and backend APIs.",
+      "tech": "Uses Next.js and Payload CMS for the website; React, Vite and TanStack Router for the portal; Hono and Prisma for the backend. Deployed on AWS using SST."
+    },
+    {
+      "name": "MoSJE Portal",
+      "url": "https://mosje-portal.prodioslabs.com",
+      "github": "",
+      "type": "work",
+      "description": "Made dynamic and interactive dashboards, displaying large datasets in easy-to-understand charts and graphs. Processed huge amounts of data into manageable information.",
+      "tech": "Uses React, Nestjs, Prisma and MongoDB."
+    }
+  ]
+}
