@@ -1,6 +1,6 @@
 <div align="center">
 
-# `/\` &nbsp; ayush gusain
+# `/\\` &nbsp; A \ G
 
 ...
 
@@ -12,7 +12,7 @@ who likes front-end, UI/UX, and making cool looking things.
 
 ---
 
-## ⌁ the feel
+## ~ the feel
 
 Everything sits on a hand-mixed **OKLCH** palette — base cream, soft beige,
 warm sand — rendered in `JetBrains Mono` with `Noto Sans` for the quieter labels.
@@ -21,7 +21,7 @@ that drift behind a `z-3` content layer. Hover, and things lift two pixels.
 
 ---
 
-## ⌁ built with
+## ~ built with
 
 | | |
 |---|---|
@@ -36,7 +36,7 @@ that drift behind a `z-3` content layer. Hover, and things lift two pixels.
 
 ---
 
-## ⌁ the architecture
+## ~ the architecture
 
 A single `(home)` route group owns the chrome — `TooltipProvider` → `SidebarProvider`
 → sidebar, floating header, and a shared `<main>`. Three pages live beneath it:
@@ -61,22 +61,22 @@ src/
 
 ---
 
-## ⌁ run it
+## ~ run it
 
 ```bash
 bun install
-bun dev          # dev server
-bun run build    # production build
-bun start        # serve the build
+bun dev        # dev server
+bun build      # production build
+bun start      # serve the build
 
-bun run lint       # eslint (next core-web-vitals + ts)
-bun run typecheck  # tsc --noEmit
-bun run format     # prettier — no semicolons, single quotes
+bun lint       # eslint (next core-web-vitals + ts)
+bun typecheck  # tsc --noEmit
+bun format     # prettier — no semicolons, single quotes
 ```
 
 ---
 
-## ⌁ reach out
+## ~ reach out
 
 [LinkedIn](https://www.linkedin.com/in/ayushgusain2106) ·
 [GitHub](https://github.com/TreadOwl) ·
@@ -85,6 +85,7 @@ bun run format     # prettier — no semicolons, single quotes
 <div align="center">
 
 *made this when tasks were easy, and I was trying to look busy*
+
 ©2026 Ayush Gusain
 
 </div>
