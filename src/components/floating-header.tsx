@@ -1,9 +1,14 @@
+'use client'
+
 import Link from 'next/link'
-import { SidebarTrigger } from '@/components/ui/sidebar'
+import { SidebarTrigger, useSidebar } from '@/components/ui/sidebar'
 
 export function FloatingHeader() {
+  const { state, isMobile } = useSidebar()
+  const offset = isMobile ? '0px' : state === 'expanded' ? 'var(--sidebar-width)' : 'var(--sidebar-width-icon)'
+
   return (
-    <header className="fixed top-0 left-0 w-full flex justify-center z-50 pointer-events-none">
+    <header style={{ paddingLeft: offset }} className="fixed top-0 left-0 w-full flex justify-center z-50 pointer-events-none">
       <div
         className="pointer-events-auto relative flex justify-between max-w-2xl w-full
         bg-background/50 backdrop-blur-sm border border-border/50 rounded-full p-3 mt-3 mx-3"
